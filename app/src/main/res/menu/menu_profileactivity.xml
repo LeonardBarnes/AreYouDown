@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ProfileActivity">
+        <item
+            android:id="@+id/Logout"
+            android:orderInCategory="6"
+            app:showAsAction="never"
+            android:checkableBehavior="single"
+            android:title="Logout"/>
+    <item
+        android:id="@+id/refresh"
+        android:orderInCategory="3"
+        app:showAsAction="never"
+        android:checkableBehavior="single"
+        android:title="Refresh"/>
+
+    <item
+        android:id="@+id/ProfilePicture"
+        android:orderInCategory="2"
+        app:showAsAction="never"
+        android:checkableBehavior="single"
+        android:title="Profile picture"/>
+    <item
+        android:id="@+id/Peoplethataredown"
+        android:orderInCategory="1"
+        app:showAsAction="never"
+        android:checkableBehavior="single"
+        android:title="AreYouDown Requests"/>
+    <item
+        android:id="@+id/back"
+        android:orderInCategory="5"
+        app:showAsAction="never"
+        android:checkableBehavior="single"
+        android:title="Back"/>
+    <item
+        android:id="@+id/Responses"
+        android:orderInCategory="4"
+        app:showAsAction="never"
+        android:checkableBehavior="single"
+        android:title="Responses"/>
+
+
+</menu>

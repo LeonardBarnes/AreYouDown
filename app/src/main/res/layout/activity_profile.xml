@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.areyoudown.areyoudown.ProfileActivity"
+    android:background="#ffffff">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image_home"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#000"
+        android:padding="10dp"
+        android:layout_below="@+id/frameLayout"
+        android:layout_centerHorizontal="true" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="244dp">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000"
+        android:text="Peoples' Intentions near you"
+        android:id="@+id/textView9"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:elegantTextHeight="true"
+        android:fontFamily="serif-monospace"
+        android:visibility="invisible"
+        android:layout_above="@+id/listViewUsers"
+        android:layout_centerHorizontal="true" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout">
+
+    </FrameLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="321dp"
+        android:id="@+id/listViewUsers"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listViewUserssecondlevel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image_lastlevel"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#000"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_compat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="97dp"
+        android:text="Are You Down?"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"
+        android:checked="false"
+        android:textOff="No"
+        android:textOn="Yes"
+        app:showText="true"
+        android:visibility="gone"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="#fff"
+        android:id="@+id/buttonbackstalk"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Send a You_Are_Down "
+        android:id="@+id/buttonAreYouDownRequest"
+        android:background="@drawable/button_background"
+        android:textColor="#fff"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000"
+        android:text="AreYouDown? Requests"
+        android:id="@+id/textViewrequests"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:elegantTextHeight="true"
+        android:fontFamily="serif-monospace"
+        android:visibility="gone"
+
+        android:layout_below="@+id/frameLayout"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listViewRequests"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+
+
+        android:layout_below="@+id/textViewrequests" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listViewRequestindividuals"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decline"
+        android:background="@drawable/button_background"
+        android:textColor="#fff"
+        android:visibility="gone"
+        android:id="@+id/buttonDecline"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignStart="@+id/profile_image_lastlevel"
+        android:layout_marginTop="34dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept"
+        android:background="@drawable/button_background"
+        android:textColor="#fff"
+        android:visibility="gone"
+        android:id="@+id/button2Accept"
+        android:layout_above="@+id/buttonbackrequest"
+        android:layout_alignEnd="@+id/profile_image_lastlevel" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:background="@drawable/button_background"
+        android:textColor="#fff"
+        android:visibility="invisible"
+        android:id="@+id/buttonbackrequest"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/buttonDecline"
+        android:layout_centerHorizontal="true" />
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listViewResponses"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0796836501"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textIsSelectable="true"
+        android:typeface="monospace"
+        android:padding="2dp"
+        android:paddingBottom="6dp"
+        android:id="@+id/textView11numberv2"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView10facebookv2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Facebook name"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textIsSelectable="true"
+        android:typeface="monospace"
+        android:padding="2dp"
+        android:visibility="gone"
+        android:paddingBottom="6dp"
+        android:id="@+id/textView10facebookv2"
+        android:layout_below="@+id/profile_image_lastlevel"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#fff"
+        android:padding="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:text="Jessi Millmore"
+        android:id="@+id/textView9NameSurname"
+        android:layout_marginStart="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/profile_image"
+        android:padding="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="16Km"
+        android:id="@+id/textView9DisplayDistance"
+        android:layout_alignTop="@+id/textView9displayagepref"
+        android:layout_alignParentEnd="true"
+        android:typeface="monospace"
+        android:padding="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="18 years-35 years"
+        android:id="@+id/textView9displayagepref"
+        android:typeface="monospace"
+        android:padding="2dp"
+        android:paddingBottom="6dp"
+        android:layout_alignBottom="@+id/profile_image"
+        android:layout_alignStart="@+id/textView9NameSurname" />
+
+
+
+</RelativeLayout>

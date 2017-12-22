@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="MY INTENTIONS"
+        android:textColor="#000"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:typeface="monospace"
+        android:id="@+id/textView5"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/spinnerIntention"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:id="@+id/spinnerIntention"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:spinnerMode="dropdown"
+        android:layout_above="@+id/textView6"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Gender Prefrence"
+        android:textColor="#000"
+        android:fontFamily="casual"
+        android:typeface="monospace"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:id="@+id/textView6"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/spinnerSexPrefrence"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:id="@+id/spinnerSexPrefrence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textAlignment="gravity"
+        android:gravity="right"
+        android:spinnerMode="dropdown"
+        android:layout_above="@+id/spinnerAgePrefrence"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="47dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="AGE PREFRENCE"
+        android:textColor="#000"
+        android:textAllCaps="true"
+        android:fontFamily="casual"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:id="@+id/textView7"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginTop="230dp" />
+
+    <Spinner
+        android:id="@+id/spinnerAgePrefrence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textAlignment="gravity"
+        android:gravity="right"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="I&apos;m Down"
+            android:id="@+id/buttonImDown"
+            android:layout_gravity="right"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <Spinner
+            android:id="@+id/spinnerTimecommitement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAlignment="gravity"
+            android:gravity="right"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="34dp"
+            android:layout_above="@+id/buttonImDown"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="TIME COMMITMENT"
+            android:textColor="#000"
+            android:textAllCaps="true"
+            android:fontFamily="casual"
+            android:typeface="monospace"
+            android:textStyle="bold"
+            android:id="@+id/textView8"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignTop="@+id/spinnerTimecommitement"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

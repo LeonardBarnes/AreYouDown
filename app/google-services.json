@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "802594032584",
+    "firebase_url": "https://areyoudown-2401b.firebaseio.com",
+    "project_id": "areyoudown-2401b",
+    "storage_bucket": "areyoudown-2401b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802594032584:android:3f26a48ac76f4038",
+        "android_client_info": {
+          "package_name": "com.areyoudown.areyoudown"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802594032584-lc4ts7vcqg9kep9u1c6uprvrm2oloeit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp5S8clfLZ56JJWRfZUqqfBGe4TjjLHsg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
